@@ -1,0 +1,20 @@
+!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Your Title Here</title>
+</head>
+<body>
+<h2>Previous Trees</h2>
+
+<ul th:each="tree : ${previousTrees}">
+    <li th:text="${tree.toString()}"></li>
+</ul>
+
+<br>
+
+<a href="/enter-numbers">Enter Numbers!</a>
+
+</body>
+</html>
